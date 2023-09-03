@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resume</title>
+</head>
+<body>
+    <h1>Sharad Chandel</h1>
+    <p>Email: sharad1360.be22@chitkarauniversity.edu.in</p>
+    <p>Phone: 7590889608</p>
+    
+    <h2>Objective</h2>
+    <p>I am a second-year Computer Science Engineering student with a focus on C++, Object-Oriented Programming, Data Structures, and Algorithms. I am seeking opportunities to apply my skills and gain real-world experience in the field of computer science.</p>
+    
+    <h2>Academic Information</h2>
+    <p><strong>University:</strong> Chitkara University</p>
+    <p><strong>Program:</strong> Computer Science Engineering</p>
+    <p><strong>Year:</strong> Second Year</p>
+    
+    <h2>Skills</h2>
+    <ul>
+        <li>C++ Programming</li>
+        <li>Object-Oriented Programming</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Linux</li>
+    </ul>
+    
+    <h2>Certifications</h2>
+    <ul>
+        <li>Certified C++ Programmer</li>
+        <li>Data Structures and Algorithms Certification</li>
+    </ul>
+    
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Reading</li>
+        <li>Coding</li>
+        <li>Chess</li>
+    </ul>
+
+    <h2>Images</h2>
+    <button onclick="showImage('image1')">Show Image 1</button>
+    <button onclick="showImage('image2')">Show Image 2</button>
+    <button onclick="showImage('image3')">Show Image 3</button>
+    <button onclick="showImage('image4')">Show Image 4</button>
+    <button onclick="showImage('image5')">Show Image 5</button>
+    <button onclick="showImage('image6')">Show Image 6</button>
+    <button onclick="showImage('image7')">Show Image 7</button>
+    
+    <img id="image1" src="image1.jpg" style="display: none;" alt="Image 1">
+    <img id="image2" src="image2.jpg" style="display: none;" alt="Image 2">
+    <img id="image3" src="image3.jpg" style="display: none;" alt="Image 3">
+    <img id="image4" src="image4.jpg" style="display: none;" alt="Image 4">
+    <img id="image5" src="image5.jpg" style="display: none;" alt="Image 5">
+    <img id="image6" src="image6.jpg" style="display: none;" alt="Image 6">
+    <img id="image7" src="image7.jpg" style="display: none;" alt="Image 7">
+    
+    <script>
+        function showImage(imageId) {
+            var images = document.getElementsByTagName("img");
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            document.getElementById(imageId).style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
